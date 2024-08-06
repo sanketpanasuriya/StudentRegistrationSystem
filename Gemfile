@@ -66,6 +66,12 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem 'sassc'
+
 gem "devise", "~> 4.9"
 
-gem "activeadmin", "~> 3.2"
+gem "activeadmin", "~> 3.2" 
+
+gem "letter_opener", "~> 1.10"
+
+gem "whenever", "~> 1.0"

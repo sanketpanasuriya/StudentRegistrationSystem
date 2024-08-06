@@ -106,6 +106,9 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    childprocess (5.1.0)
+      logger (~> 1.5)
+    chronic (0.10.2)
     concurrent-ruby (1.3.3)
     connection_pool (2.4.1)
     crass (1.0.6)
@@ -122,6 +125,12 @@ GEM
       warden (~> 1.2.3)
     drb (2.2.1)
     erubi (1.13.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     formtastic (5.0.0)
       actionpack (>= 6.0.0)
     formtastic_i18n (0.7.0)
@@ -164,6 +173,11 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
+    launchy (3.0.1)
+      addressable (~> 2.8)
+      childprocess (~> 5.0)
+    letter_opener (1.10.0)
+      launchy (>= 2.2, < 4)
     logger (1.6.0)
     loofah (2.22.0)
       crass (~> 1.0.2)
@@ -266,6 +280,8 @@ GEM
       strscan
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.23.0)
       base64 (~> 0.2)
       logger (~> 1.4)
@@ -309,6 +325,8 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.6.17)
@@ -329,9 +347,11 @@ DEPENDENCIES
   devise (~> 4.9)
   importmap-rails
   jbuilder
+  letter_opener (~> 1.10)
   puma (>= 5.0)
   rails (~> 7.1.3, >= 7.1.3.4)
   redis (>= 4.0.1)
+  sassc
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
@@ -339,6 +359,7 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   web-console
+  whenever (~> 1.0)
 
 RUBY VERSION
    ruby 3.3.1p55
