@@ -1,0 +1,6 @@
+<h1>Import Students</h1>
+
+<%= form_tag import_csv_admin_students_path, multipart: true, method: :post do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag 'Upload CSV', class: 'button' %>
+<% end %>
